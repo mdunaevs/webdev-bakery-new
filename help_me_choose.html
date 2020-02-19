@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name = "author" content = "Max Dunaevschi">
+      <meta name = "keywords" content = "The Butterwood Bake Consortium">
+      <meta name = "description" content = "The Butterwood Bake Consortium's Official Website">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel = "stylesheet" media = "all" type = "text/css" href = "css/styles.css" />
+      <link rel="icon" href="images/logo.png">
+
+      <script type="text/javascript" src="js/scripts.js"></script>
+      <title>The Butterwood Bake Consortium</title>
+    </head>
+
+    <body>
+        <div id="container">
+
+            <div id="top_row">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!-- Deals with responsiveness of the navigation bar. When the screen size is shrunken, the
+                    navigation bar becomes a collapsable dropdown.-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Creates list with anchor tags to the pages which acts as the navigation bar -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item navbar-brand">
+                                <a class="nav-link" href="index.html"><img class = "logo" src="images/logo.png"> <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product_gallery.html">Product Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Orders<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="place_an_order.html">Place an Order</a></li>
+                                  <li><a href="custom_orders.html">Custom Orders</a></li>
+                                </ul>
+                            </li>
+                           <li class="nav-item">
+                                <a class="nav-link" href="special_events.html">Special Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="visit.html">Visit Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Inquiry</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Introduction that describes the purpose of the page-->
+            <div id = "help-me-choose-intro">
+                <h1 id="help-text" >Help Me Choose</h1><br/><br/>
+                <h3 id="help-description" >With just a few quick questions, we can help you find the cake that will fit your needs.</h3><br/><br/>
+                <!-- When clicked runs the function clickStartSurvey()-->
+                <a id="start-button" onclick="clickStartSurvey();">Start Now ></a>
+            </div>
+
+            <!-- Deals with the questions in the survey-->
+            <div id="survey">
+                <div class="row">
+                    <!-- Progress bar that tracks where the user is within the survey-->
+                    <div class="col-lg-2" id = "question-progress-bar">
+                        <a class = "circle" id = "option_1" onclick="reactToOption('#question_1');">&nbsp;&nbsp;&nbsp;&nbsp</a> Crowd <br/>
+                        <a class = "circle" id = "option_2" onclick="reactToOption('#question_2');">&nbsp;&nbsp;&nbsp;&nbsp</a> Budget <br/>
+                        <a class = "circle" id = "option_3" onclick="reactToOption('#question_3');">&nbsp;&nbsp;&nbsp;&nbsp</a> Style <br/>
+                        <a class = "circle" id = "option_4" onclick="reactToOption('#question_4');">&nbsp;&nbsp;&nbsp;&nbsp</a> Colors <br/>
+                        <a class = "circle" id = "option_5" onclick="reactToOption('#question_5');">&nbsp;&nbsp;&nbsp;&nbsp</a> Flavors <br/>
+                    </div>
+
+                    <div class="col-lg-10">
+                        <!-- Contains the information regarding question #1 and its options-->
+                        <div id="question_1">
+                            <!-- Question statement-->
+                            <div class = "question">
+                                <p>What group do you want the cake to be popular for?</p>
+                            </div>
+                            <!-- Makes gray background on the question-->
+                            <div class = "background-triangle"></div>
+                            <!-- Option chouces for the first question-->
+                            <div class="row">
+                                <div class = "col-lg-3" >
+                                    Diverse Crowd
+                                    <div id="hollow-circle-11" onclick="populateResponseArray(1, 1);"></div>
+                                </div>
+                                <div class = "col-lg-3" >
+                                    Kids
+                                    <div id="hollow-circle-12" onclick="populateResponseArray(1, 2);"></div>
+                                </div>
+                                <div class = "col-lg-3" >
+                                    Female Friends
+                                    <div id="hollow-circle-13" onclick="populateResponseArray(1, 3);"></div>
+                                </div>
+                                <div class = "col-lg-3" >
+                                    Older Crowd
+                                    <div id="hollow-circle-14" onclick="populateResponseArray(1, 4);"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contains the information regarding question #2 and its options-->
+                        <div id="question_2">
+                            <!-- Question statement-->
+                            <div class = "question">
+                                <p>How is your budget?</p>
+                            </div>
+                            <!-- Makes gray background on the question-->
+                            <div class = "background-triangle"></div>
+                            <!-- Option chouces for the second question-->
+                            <div class = "question-options">
+                                <div class="row">
+                                    <div class = "col-lg-4" >
+                                      I can't spend too much
+                                      <div id="hollow-circle-21" onclick="populateResponseArray(2, 1);"></div>
+                                    </div>
+                                    <div class = "col-lg-4" >
+                                      I have a moderate budge
+                                      <div id="hollow-circle-22" onclick="populateResponseArray(2, 2);"></div>
+                                    </div>
+
+                                    <div class = "col-lg-4" >
+                                        I can spend the money!
+                                      <div id="hollow-circle-23" onclick="populateResponseArray(2, 3);"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Contains the information regarding question #3 and its options-->
+                        <div id="question_3">
+                            <!-- Question statement-->
+                            <div class="question">
+                                <p>What style are you inclined too?</p>
+                            </div>
+                            <!-- Makes gray background on the question-->
+                            <div class = "background-triangle"></div>
+                            <!-- Option chouces for the third question-->
+                            <div class="row">
+                                <div class = "col-lg-3" >
+                                    Modern
+                                    <div id="hollow-circle-31" onclick="populateResponseArray(3, 1);"></div>
+                                </div>
+                                <div class = "col-lg-3" >
+                                    Classical
+                                    <div id="hollow-circle-32" onclick="populateResponseArray(3, 2);"></div>
+                                </div>
+                                <div class = "col-lg-3" >
+                                    Minimalistic
+                                    <div id="hollow-circle-33" onclick="populateResponseArray(3, 3);"></div>
+                                </div>
+                                <div class = "col-lg-3" >
+                                    Extravagant
+                                    <div id="hollow-circle-34" onclick="populateResponseArray(3, 4);"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contains the information regarding question #4 and its options-->
+                        <div id="question_4">
+                            <!-- Question statement-->
+                            <div class = "question">
+                                <p>What kind of colors do you care about?</p>
+                            </div>
+                            <!-- Makes gray background on the question-->
+                            <div class = "background-triangle"></div>
+                            <!-- Option chouces for the fourth question-->
+                            <div class="row">
+                                <div class = "col-lg-3" >
+                                    Earth Tones
+                                    <div id="hollow-circle-41" onclick="populateResponseArray(4, 1);"></div>
+                                </div>
+                                <div class = "col-lg-3" >
+                                    White Tones
+                                    <div id="hollow-circle-42" onclick="populateResponseArray(4, 2);"></div>
+                                </div>
+                                <div class = "col-lg-3" >
+                                    Rich Tones
+                                    <div id="hollow-circle-43" onclick="populateResponseArray(4, 3);"></div>
+                                </div>
+                                <div class = "col-lg-3" >
+                                    Pastel
+                                    <div id="hollow-circle-44" onclick="populateResponseArray(4, 4);"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contains the information regarding question #5 and its options-->
+                        <div id="question_5">
+                            <!-- Question statement-->
+                            <div class = "question">
+                                <p>What flavor are you inclined to try?</p>
+                            </div>
+                            <!-- Makes gray background on the question-->
+                            <div class = "background-triangle"></div>
+                            <!-- Option chouces for the fifth question-->
+                            <div class="row">
+                                <div class = "col-lg-3" >
+                                    Spices
+                                    <div id="hollow-circle-51" onclick="populateResponseArray(5, 1);"></div>
+                                </div>
+                                <div class = "col-lg-3" >
+                                    Fruits
+                                    <div id="hollow-circle-52" onclick="populateResponseArray(5, 2);"></div>
+                                </div>
+                                <div class = "col-lg-3" >
+                                    Classical
+                                    <div id="hollow-circle-53" onclick="populateResponseArray(5, 3);"></div>
+                                </div>
+                                <div class = "col-lg-3" >
+                                    Unexpected
+                                    <div id="hollow-circle-54" onclick="populateResponseArray(5, 4);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--At the end of the survey the an algortihm determines what the best cake is for the user,
+            and presents it-->
+            <div id="theCake">
+              <a id="theCakeComment" href="" target = "_blank">Read a comment...</a>
+            </div>
+
+            <footer>
+                <div class="container">
+                    <!-- Deals with responsive footer-->
+                    <div class="row">
+                        <!-- Image with the logo-->
+                        <div class="col-sm-3">
+                            <img src = "images/logo.png" height="150" width="175"/>
+                        </div>
+                        <!-- Information about the store, including Location, Phone Number, and email address-->
+                        <div class="col-sm-4">
+                            Lawrenceville
+                            <br/>
+                            <a href="https://goo.gl/maps/NoZRBGuTuP12" target = "_blank">5222 Butler St Pittsburgh, PA 15201</a>
+                            <br/>
+                            <a href="tel:4127810218">412-781-0218</a>
+                            <br/>
+                            <a href = "mailto:info@thebutterwood.com">info@thebutterwood.com</a>
+                        </div>
+                        <!-- Information about the hours of operation. There is also a link to the best times graphs-->
+                        <div class="col-sm-3">
+                            Hours
+                            <br/>
+                            <p>Wed–Fri 12PM - 11PM<br/>
+                            Sat 10AM - 11PM<br/>
+                            Sun 10AM - 9PM</p>
+                            <a href="visit.html#best_times_week" id="best_times">Best Times</a>
+                        </div>
+                        <!-- Links to external social media pages such as facebook and instagram-->
+                        <div class="col-sm-2">
+                            <a href = "https://www.facebook.com/thebutterwoodbakeconsortium" target = "_blank"><img src = images/facebook.png height = "50" width = "50" /></a>
+                            <a href = "https://www.instagram.com/thebutterwoodbakeconsortium/" target = "_blank"><img src = images/instagram.png height = "50" width = "50"/></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- Imports for jquery and bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

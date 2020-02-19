@@ -1,0 +1,953 @@
+html{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#container{
+  margin-left: inherit !important;
+  margin-right: inherit !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+
+/* RESPONSIVE COLUMNS TEXT PROPERTIES */
+.col-sm-2{
+  font-family: 'Enriqueta, serif';
+  font-variant: small-caps;
+  color: #800020;
+  text-align: center;
+  align-self: center;
+}
+
+.col-sm-3{
+  font-family: 'Enriqueta, serif';
+  font-variant: small-caps;
+  color: #800020;
+  text-align: center;
+  align-self: center;
+}
+
+.col-sm-4{
+  font-family: 'Enriqueta, serif';
+  font-variant: small-caps;
+  color: #800020;
+  text-align: center;
+  align-self: center;
+}
+
+a.col-sm{
+    font-size: 85%;
+    font-family: Georgia;
+}
+
+p.col-sm {
+    font-variant: none;
+    font-size: 85%;
+    font-family: Georgia;
+    padding-top: 5px;
+}
+
+/* RESPONSIVE COLUMNS IMAGE PROPERTY */
+
+img.col-sm {
+    padding: 5px;
+}
+
+/* FOOTER */
+
+footer{
+    /*background-color: #ffffff;*/
+    /*background-image: url("../images/marble.jpeg");*/
+    padding: 10px;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+/* Best times button on footer */
+/* Styling for button */
+#best_times{
+    text-decoration: none;
+    font-family: 'Enriqueta, serif';
+    font-size: 1em;
+    font-weight: 400;
+    padding: 10px;
+    color: #800020;
+    background: #f6f6f6;
+}
+
+/* Styling for button when hovering over it */
+#best_times:hover {
+    background: #f6f6f6;
+    text-decoration: underline;
+}
+
+/* NAV BAR */
+
+/* Makes logo in nav bar 100 pixels */
+img.logo{
+    width: 100px;
+}
+
+/* Aligns nav bar to center of page */
+.navbar-collapse {
+    flex-grow: 0;
+    align-items: center;
+}
+
+a.nav-link{
+    vertical-align: bottom;
+}
+
+/* Places navigation bar in better position with repsect to other items */
+#top_row nav{
+  list-style: none;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  /*background-color: #ffffff;
+  background-image: url("../images/marble.jpeg");*/
+  margin: auto;
+}
+
+/* Aligns text of list items in nave bar to center */
+li.nav-item{
+    align-self: center;
+}
+
+/* Top row navigation features regarding selectd page */
+#top_row nav a {
+    text-decoration: none;
+    font-family: 'Enriqueta, serif';
+    font-size: 1.5em;
+    font-variant: small-caps;
+    font-weight: 400;
+    padding: 10px;
+    color: #000000;
+}
+
+#top_row nav a.selected {
+    /*background: #f6f6f6;*/
+    color: #800020;
+}
+
+#top_row nav a:hover {
+    /*background: #f6f6f6;*/
+    color: #800020;
+}
+
+/* LOCATION DIV ON VISIT US PAGE */
+
+/* Sets background image of cupcakes div */
+#cupcakes {
+    background-image: url("../images/cupcakes.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 28em;
+}
+
+/* Styles the map on the Visit Us page */
+#map{
+    overflow:hidden;
+    padding-bottom: 28em;
+    position:relative;
+    height:0;
+}
+
+#map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* Sets background image of coffee div */
+#coffee{
+    background-image: url("../images/cafe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 28em;
+    margin-left: 0;
+}
+
+/* HOME PAGE ABOUT DIV*/
+
+/* Home page interior image */
+#inside-couch .col-lg-9{
+    background-image: url("../images/inside.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 37em;
+}
+/* Home page wood background */
+#inside-couch .col-lg-3{
+    background-image: url("../images/vert_wood2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 37em;
+}
+
+/* Home page text styling */
+#inside-couch .col-lg-3 p{
+    padding: 10px;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 70px;
+}
+
+/* Home page text styling */
+#inside-couch .col-lg-3 h3{
+    text-align: center;
+    color: #ffffff;
+    margin-top: 30px;
+    font-family: 'Enriqueta, serif';
+    font-variant: small-caps;
+    font-style: italic;
+}
+
+/* HOME PAGE NEWS REPORTS DIV*/
+
+/* Styles the image of the card*/
+.card-img-top{
+    width: 23em;
+    height: 20em;
+    align-self: center;
+}
+
+/* Styles the size and postioning of the card*/
+.card{
+    text-align: center;
+    padding: 10px;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+/* Styles the text of the card*/
+.card-text-2{
+    font-size: 0.745em;
+}
+
+/* Styles horizontal line */
+hr{
+  border-top: 3px solid;
+}
+
+/* TABLE ON VISIT US PAGE */
+
+/* Styles table size and border width and color */
+table{
+    width: 100%;
+    border: 3px solid #075F8A;
+    border-spacing: 3px;
+    border-collapse: collapse;
+}
+
+/* Styles table header */
+th {
+    height: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1em;
+}
+/* Styles table header, row, column size, padding, and center text */
+th, td, tr{
+    padding: 2px;
+    text-align: center;
+    border: 1px solid #7FD5E5;
+}
+
+/* Makes font-size of row and columns smaller */
+td, tr{
+    font-size: 0.85em;
+}
+
+.table{
+    margin-bottom: 0rem;
+}
+
+/* CONTACT FORM */
+
+@media (min-width:641px)  {
+    #contact-form {
+      padding-left:10em;
+      padding-right:10em;
+    }
+}
+
+/* Styles legend text and position */
+legend{
+    color: #800020;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+button{
+    border-style: none;
+}
+/* Makes labels black */
+.form_label{
+      color: #ffffff;
+}
+
+.centered-row {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* PRODUCT GALLERY */
+
+/*Carousel image height*/
+.carousel-inner img{
+    height: 33em;
+}
+
+/*Carousel controls*/
+.carousel-control-next, .carousel-control-prev {
+    z-index: 100;
+}
+
+/* CAKE HELPER WHICH CONNECTS TO  help_me_choose PAGE*/
+
+/* Styles background and size of div cake-helper */
+#cake-helper{
+    padding: 10px;
+    background-image: url("../images/helper-cakes2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 24em;
+    text-align: center;
+    font-family: 'Enriqueta, serif';
+    font-variant: small-caps;
+    color: #ffffff;
+}
+
+/* Aligns text */
+#cake-helper h3{
+    text-align: center;
+    margin-top: 3em;
+    font-size: 3em;
+}
+
+/* Font-size of anchor is made larger */
+#cake-helper a{
+    font-size: 2em;
+}
+
+/* When hovering over anchor it is underlined */
+#cake-helper a:hover{
+    text-decoration: underline;
+}
+
+#cake-helper a{
+    color: white;
+}
+
+/* PRODUCT GALLERY CAROUSEL */
+
+/* Styling for the caption of the cake carousel */
+.carousel-caption{
+    margin-bottom: 5em;
+    padding: 10px;
+}
+
+/* Styling for responsive drop down menu */
+.dropdown-menu{
+    top:unset;
+    left:unset;
+}
+
+/* Underlines the detail headers */
+.custom_orders_details {
+   -webkit-text-decoration-line: underline; /* Safari */
+   text-decoration-line: underline;
+}
+
+.text_details{
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+/* SPECIAL EVENTS */
+
+/* Styles image height */
+.special_events_image {
+    height:30em;
+}
+
+.col-lg-12.text_details{
+    background-color: #fce4ec;
+}
+
+/* PLACE AN ORDER  */
+.next-button img{
+    height: 3em;
+    margin-left: 65em;
+}
+
+.submit-button img{
+    height: 3em;
+    margin-left: 62.5em;
+}
+
+#fullname{
+    margin-left: 7em;
+}
+
+#address{
+    margin-left: 3em;
+}
+
+#zipcode{
+    margin-left: 5.5em;
+}
+
+#email{
+    margin-left: 7em;
+}
+
+#phone{
+    margin-left: 2.7em;
+}
+
+#pickupd{
+    margin-left: 4em;
+    width: 62%;
+}
+
+#pickupt{
+    margin-left: 4em;
+    width: 62%;
+}
+
+.pie-selector {
+    margin-left: 3em;
+    width: 62%;
+}
+
+#pie-prices{
+    margin-bottom: 2em;
+}
+
+/* INQUIRY FORM */
+
+#inquiry_text{
+    font-family: 'Enriqueta, serif';
+    font-variant: small-caps;
+    color: #000000;
+    font-size: 2em;
+}
+
+/* HELP ME CHOOSE */
+
+/* Help me choose introduction page */
+#help-me-choose-intro{
+    text-align: center;
+    font-family: 'Enriqueta, serif';
+    font-variant: small-caps;
+    background-image: url("../images/plan.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 48em;
+    color: white;
+    margin-top: 0;
+}
+
+/* Help me choose introduction page text */
+#help-text{
+    font-size: 4em;
+    padding-top: 2.6em;
+}
+
+/* Help me choose introduction page description */
+#help-description{
+    font-size: 3em;
+}
+
+/* Help me choose introduction page start button */
+#start-button{
+    padding: 10px;
+    background-color: white;
+    color: #800020;
+    outline: 2px solid;
+    outline-color: #800020;
+}
+
+/* Help me choose introduction page start button hover*/
+#start-button:hover{
+    padding: 10px;
+    background-color: #800020;
+    color: white;
+    outline: 2px solid;
+    outline-color: white;
+    text-decoration: underline;
+}
+
+/* Help me choose introduction page, initially has no questions showing*/
+#survey{
+    display: none;
+}
+
+/* Progress bar is aligned properly */
+#survey .col-lg-2{
+    text-align: left;
+    padding-left: 80px;
+    padding-top: 10px;
+}
+
+/* Progress bar circles */
+.circle {
+    background-color: gray;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+/* Ovals aruond the options */
+.survey-response{
+    background-color: gray;
+    padding: 10px;
+}
+/* Ovals aruond the options are green when hovered overs */
+.survey-response:hover{
+    background-color: green;
+    padding: 10px;
+}
+
+/* After all questions are answered cake is displayed */
+#theCake{
+    visibility: hidden;
+    background-image: url("../images/help_me_choose/choco_choco.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    color: white;
+    margin-top: 0;
+    background-position: center center;
+    background-size: 35em;
+    height:35em;
+    display: none;
+    text-align: center;
+}
+
+/* Link to where cake was found on yelp*/
+#theCakeComment {
+    font-family: 'Enriqueta, serif';
+    font-variant: small-caps;
+    height: 60em;
+    color: blue;
+    margin-top: 0;
+    text-align: center;
+    font-size: x-large;
+}
+
+/* Background of question statement*/
+.background-triangle {
+    width: 100%;
+    height: 10%;
+    border-left: 90px solid transparent;
+    border-top: 80px solid #f0f0f0;
+}
+
+/* Question text styling */
+.question{
+    background-color: #f0f0f0;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Enriqueta, serif';
+    font-variant: small-caps;
+    height: 4em;
+}
+
+.question p{
+    padding-top: 1em;
+}
+
+
+/* Question one icons */
+#hollow-circle-11{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/hippie.jpeg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-11:hover{
+    border-color: green;
+}
+
+#hollow-circle-12{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/boy.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-12:hover{
+    border-color: green;
+}
+
+#hollow-circle-13{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/girl.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-13:hover{
+    border-color: green;
+}
+#hollow-circle-14{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/elder.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-14:hover{
+    border-color: green;
+}
+
+/* Question 2 icons */
+#hollow-circle-21{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/money_piggy.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-21:hover{
+    border-color: green;
+}
+#hollow-circle-22{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/money_sack.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-22:hover{
+    border-color: green;
+}
+#hollow-circle-23{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/money_bank.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-23:hover{
+    border-color: green;
+}
+
+/* Quesrtion 3 icons */
+#hollow-circle-31{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/modern.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-31:hover{
+    border-color: green;
+}
+
+#hollow-circle-32{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/old_fashion.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-32:hover{
+    border-color: green;
+}
+
+#hollow-circle-33{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/minimalistic.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-33:hover{
+    border-color: green;
+}
+#hollow-circle-34{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/extravagant.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-34:hover{
+    border-color: green;
+}
+
+/* Quesrtion 4 icons */
+#hollow-circle-41{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/earth_tones.jpeg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-41:hover{
+    border-color: green;
+}
+
+#hollow-circle-42{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/snow.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-42:hover{
+    border-color: green;
+}
+
+#hollow-circle-43{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/city.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-43:hover{
+    border-color: green;
+}
+#hollow-circle-44{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/easter_bunny.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-44:hover{
+    border-color: green;
+}
+
+/* Quesrtion 5 icons */
+#hollow-circle-51{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/spicy.jpeg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-51:hover{
+    border-color: green;
+}
+
+#hollow-circle-52{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/fruits.jpeg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-52:hover{
+    border-color: green;
+}
+
+#hollow-circle-53{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/chocolate.jpeg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-53:hover{
+    border-color: green;
+}
+#hollow-circle-54{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 12px;
+    border-color: gray;
+    background-image: url(../images/help_me_choose/question.jpeg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    padding: 0;
+}
+
+#hollow-circle-54:hover{
+    border-color: green;
+}
+
+@media screen and (max-width: 480px){
+    #custom_order_info{
+        margin-bottom: 0em;
+        font-size: 0.65em;
+    }
+    #custom_order_info h2{
+        margin-bottom: 0em;
+        font-size: 2em;
+    }
+    #custom_order_info h4{
+        margin-bottom: 0em;
+        font-size: 2em;
+    }
+    #custom_order_info img{
+        height: 25px;
+        width: 25px
+    }
+
+    .carousel_description{
+        margin-bottom: 0em;
+    }
+
+    .next-button img{
+        height: 3em;
+        margin-left: 15em;
+    }
+
+    .submit-button img{
+        height: 3em;
+        margin-left: 12.5em;
+    }
+}
+
+/* INDEX.HTML YOUTUBE VIDEO */
+#inside-video iframe{
+    width: 100%;
+    height: 44em;
+}

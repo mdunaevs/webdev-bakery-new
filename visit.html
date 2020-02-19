@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name = "author" content = "Max Dunaevschi">
+      <meta name = "keywords" content = "The Butterwood Bake Consortium">
+      <meta name = "description" content = "The Butterwood Bake Consortium's Official Website">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel = "stylesheet" media = "all" type = "text/css" href = "css/styles.css" />
+      <link rel="icon" href="images/logo.png">
+
+      <script type="text/javascript" src="js/scripts.js"></script>
+      <script type="text/javascript" src="js/scripts_chart.js"></script>
+      <script src="https://code.highcharts.com/highcharts.js"></script>
+      <title>The Butterwood Bake Consortium</title>
+    </head>
+
+    <body>
+        <div id="container">
+
+            <div id="top_row">
+                <header>
+                    <!--<h1>The Butterwood Bake Consortium</h1>-->
+                </header>
+
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!-- Deals with responsiveness of the navigation bar. When the screen size is shrunken, the
+                    navigation bar becomes a collapsable dropdown.-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Creates list with anchor tags to the pages which acts as the navigation bar -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item navbar-brand">
+                                <a class="nav-link" href="index.html"><img class = "logo" src="images/logo.png"> <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product_gallery.html">Product Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Orders<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="place_an_order.html">Place an Order</a></li>
+                                  <li><a href="custom_orders.html">Custom Orders</a></li>
+                                </ul>
+                            </li>
+                           <li class="nav-item">
+                                <a class="nav-link" href="special_events.html">Special Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link selected" href="visit.html">Visit Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Inquiry</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div id = "content">
+                <!-- Presents information of location -->
+                <div id="location">
+                    <div class = "row">
+                        <div class = "col-md-4" id="cupcakes">
+                        </div>
+                        <!-- Google maps iframe of location-->
+                        <div class = "col-md-4" id="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.7441357739026!2d-79.95601068460212!3d40.4809251793577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f2f8094aa81b%3A0x8460b792bcc058aa!2s5222+Butler+St%2C+Pittsburgh%2C+PA+15201!5e0!3m2!1sen!2sus!4v1552343119604" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class = "col-md-4" id="coffee">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Table which contains information about bakery phone number, email, address, hours of operation-->
+                <table class="table table-dark" border = "4">
+                    <tr>
+                        <th colspan = "2">Visit Us</th>
+                    </tr>
+                    <!-- Phone Number-->
+                    <tr>
+                        <td>Phone</td>
+                        <td><a href="tel:4127810218">412-781-0218</a></td>
+                    </tr>
+                    <!-- Email address-->
+                    <tr>
+                        <td>Email</td>
+                        <td><a href = "mailto:info@thebutterwood.com">info@thebutterwood.com</a></td>
+                    </tr>
+                    <!-- Address -->
+                    <tr>
+                        <td>Address</td>
+                        <td><a href="https://goo.gl/maps/NoZRBGuTuP12" target = "_blank">5222 Butler St Pittsburgh, PA 15201</a></td>
+                    </tr>
+                    <!-- Hours of operation on weekdays-->
+                    <tr>
+                        <td>Hours of Operation on Weekdays</td>
+                        <td>Wed–Fri 12PM - 11PM</td>
+                    </tr>
+                    <!-- Hours of operation on weekends-->
+                    <tr>
+                        <td>Hours of Operation on Weekends</td>
+                        <td>Sat 10AM - 11PM<br/>
+                        Sun 10AM - 9PM</td>
+                    </tr>
+                </table>
+
+                <!-- Distinct graphs for best times to come during weekdays and weekends-->
+                <div id="graphs">
+                    <div id="best_times_week" style="width:100%; height: 400px;"></div>
+                    <div id="best_times_weekend" style="width:100%; height: 400px;"></div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="container">
+                    <!-- Deals with responsive footer-->
+                    <div class="row">
+                        <!-- Image with the logo-->
+                        <div class="col-sm-3">
+                            <img src = "images/logo.png" height="150" width="175"/>
+                        </div>
+                        <!-- Information about the store, including Location, Phone Number, and email address-->
+                        <div class="col-sm-4">
+                            Lawrenceville
+                            <br/>
+                            <a href="https://goo.gl/maps/NoZRBGuTuP12" target = "_blank">5222 Butler St Pittsburgh, PA 15201</a>
+                            <br/>
+                            <a href="tel:4127810218">412-781-0218</a>
+                            <br/>
+                            <a href = "mailto:info@thebutterwood.com">info@thebutterwood.com</a>
+                        </div>
+                        <!-- Information about the hours of operation. There is also a link to the best times graphs-->
+                        <div class="col-sm-3">
+                            Hours
+                            <br/>
+                            <p>Wed–Fri 12PM - 11PM<br/>
+                            Sat 10AM - 11PM<br/>
+                            Sun 10AM - 9PM</p>
+                            <a href="visit.html#best_times_week" id="best_times">Best Times</a>
+                        </div>
+                        <!-- Links to external social media pages such as facebook and instagram-->
+                        <div class="col-sm-2">
+                            <a href = "https://www.facebook.com/thebutterwoodbakeconsortium" target = "_blank"><img src = images/facebook.png height = "50" width = "50" /></a>
+                            <a href = "https://www.instagram.com/thebutterwoodbakeconsortium/" target = "_blank"><img src = images/instagram.png height = "50" width = "50"/></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+        <!-- Imports for jquery and bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
